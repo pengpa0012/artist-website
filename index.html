@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap" rel="stylesheet">
+    <script src="./assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>James Humbridge</title>
+</head>
+<body>
+    <header>        
+        <nav>
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="./assets/img/logo.svg" alt="">
+                    <span>My Portfolio</span>
+                </a>
+            </div>
+            <ul>
+                <a href="/works.html"><li>Works</li></a>
+                <a href="/contact.html"><li>Contact</li></a>
+                <a href="/about.html"><li>About</li></a>
+            </ul>
+            <div class="nav-burger">
+                <img src="./assets/img/burger.svg" alt="burger">
+            </div>
+        </nav>
+    </header>
+    <main id="swup" class="transition-fade">
+        <div class="container">
+            <div class="heading">
+                <h1 class="slide-from-left">James Humbridge</h1>
+                <span class="slide-from-left-delay">Professional Artist</span>
+            </div>
+            <div class="sample">
+                <h3 class="slide-up-delay">Sample Works</h3>
+                <div class="splide" id="splide">
+                    <div class="splide__track slide-up">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./assets/img/drawing-4.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./assets/img/drawing-5.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./assets/img/painting-2.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./assets/img/painting-6.jpg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./assets/img/art-5.jpg" alt="">
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+        </div>    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        new Splide( '#splide', {
+            type    : 'loop',
+            perPage : 3,
+            autoplay: true,
+        } ).mount();
+
+
+        if(document.body.clientWidth <= 768){
+            new Splide( '#splide', {
+                type    : 'loop',
+                perPage : 1,
+                autoplay: true,
+            } ).mount();
+        }
+        
+    </script>
+</body>
+</html>
