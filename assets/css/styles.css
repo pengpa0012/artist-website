@@ -257,7 +257,7 @@ main .container .work-content .work-images [data-tab-content]{
                         "one two four"
                         "five six seven"
                         "eight nine none";
-    gap: 30px;
+    column-gap: 10px;
 }
 
 main .container .work-content .work-images [data-tab-content].active{
@@ -266,43 +266,41 @@ main .container .work-content .work-images [data-tab-content].active{
 
 main .container .work-content .work-images [data-tab-content] img{
     width: 100%;
-    height: 100%;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(1){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(1){
     grid-area: one;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(2){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(2){
     grid-area: two;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(3){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(3){
     grid-area: three;
-    grid-row-gap: 0;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(4){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(4){
     grid-area: four;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(5){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(5){
     grid-area: five;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(6){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(6){
     grid-area: six;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(7){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(7){
     grid-area: seven;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(8){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(8){
     grid-area: eight;
 }
 
-main .container .work-content .work-images [data-tab-content] img:nth-child(9){
+main .container .work-content .work-images [data-tab-content] .image:nth-child(9){
     grid-area: nine;
 }
 
